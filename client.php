@@ -1,6 +1,10 @@
 <?php
 namespace Swoole;
 
+/**
+ * Swoole 客户端
+ * @package Swoole
+ */
 class Client {
 
     /**
@@ -71,9 +75,9 @@ class Client {
 
         /**
          * 长度值的类型
-         * @see php pack()
          *
          * @var string
+         * @see php pack()
          */
         'package_length_type'           => 'n',
 
@@ -161,10 +165,10 @@ class Client {
 
         /**
          * openSSL 隧道加密算法
-         * @see SWOOLE_SSL* 常量
          *
          * @var     int
          * @since   1.7.20
+         * @see     SWOOLE_SSL* 常量
          */
         'ssl_method'                    => null,
 

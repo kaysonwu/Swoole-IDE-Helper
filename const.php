@@ -86,3 +86,12 @@ define('SWOOLE_DTLSv1_METHOD', SWOOLE_DTLSv1_METHOD);
 define('SWOOLE_DTLSv1_SERVER_METHOD', SWOOLE_DTLSv1_SERVER_METHOD);
 
 define('SWOOLE_DTLSv1_CLIENT_METHOD', SWOOLE_DTLSv1_CLIENT_METHOD);
+
+// 以系统真实的时间来计算，发送的信号是 SIGALRM
+define('ITIMER_REAL', 0);
+
+// 以该进程在用户态下花费的时间来计算，发送的信号是 SIGVTALRM
+define('ITIMER_VIRTUAL', 1);
+
+// 以该进程在用户态下和内核态下所费的时间来计算，发送的信号是 SIGPROF
+define('ITIMER_PROF', 2);
