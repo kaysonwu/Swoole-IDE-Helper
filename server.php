@@ -675,7 +675,7 @@ class Server {
     public function shutdown(){}
 
     /**
-     * 设置一个定时器。是 swoole_timer_tick 函数别名
+     * 设置一个定时器
      *
      * @param   int         $ms             间隔时间，单位为毫秒。最大不得超过 86400000
      * @param   callback    $callback       回调函数。原型：function callback(int $timerId, mixed $params = null)
@@ -687,7 +687,7 @@ class Server {
     public function tick($ms, $callback, $userParam){}
 
     /**
-     * 在指定的时间后执行函数。是 swoole_timer_after 函数别名
+     * 在指定的时间后执行函数
      *
      * @param   int        $afterTimeMs     间隔时间，单位为毫秒。最大不得超过 86400000
      * @param   callback   $callback        回调函数。
@@ -712,7 +712,7 @@ class Server {
     public function defer($callback){}
 
     /**
-     * 删除指定的定时器。是 swoole_timer_clear 函数的别名
+     * 删除指定的定时器
      *
      * @param   int   $timerId 定时器 ID
      * @return  bool
