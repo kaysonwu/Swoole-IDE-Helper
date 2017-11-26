@@ -584,9 +584,9 @@ class Server {
      * @param   string  $host           主机地址。指定监听的 IP 地址 0.0.0.0 监听全部地址
      * @param   int     $port           端口
      * @param   int     $mode           运行模式。参考常量：SWOOLE_PROCESS、SWOOLE_BASE
-     * @param   int     $sock_type      Socket 类型。参考常量 SWOOLE_SOCK_ 开头
+     * @param   int     $sockType       Socket 类型。参考常量 SWOOLE_SOCK_ 开头
      */
-    public function __construct($host, $port = 0, $mode = SWOOLE_PROCESS, $sock_type = SWOOLE_SOCK_TCP){}
+    public function __construct($host, $port = 0, $mode = SWOOLE_PROCESS, $sockType = SWOOLE_SOCK_TCP){}
 
     /**
      * 设置运行参数
