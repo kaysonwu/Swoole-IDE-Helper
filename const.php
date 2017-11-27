@@ -87,6 +87,8 @@ define('SWOOLE_DTLSv1_SERVER_METHOD', SWOOLE_DTLSv1_SERVER_METHOD);
 
 define('SWOOLE_DTLSv1_CLIENT_METHOD', SWOOLE_DTLSv1_CLIENT_METHOD);
 
+/* Timer */
+
 // 以系统真实的时间来计算，发送的信号是 SIGALRM
 define('ITIMER_REAL', 0);
 
@@ -95,3 +97,23 @@ define('ITIMER_VIRTUAL', 1);
 
 // 以该进程在用户态下和内核态下所费的时间来计算，发送的信号是 SIGPROF
 define('ITIMER_PROF', 2);
+
+/* WebSocket */
+
+// UTF-8文本字符数据
+define('WEBSOCKET_OPCODE_TEXT', 1);
+
+// 二进制数据
+define('WEBSOCKET_OPCODE_BINARY', 2);
+
+// 心跳 ping 类型数据
+define('WEBSOCKET_OPCODE_PING', 9);
+
+// 连接进入等待握手
+define('WEBSOCKET_STATUS_CONNECTION', 1);
+
+// 正在握手
+define('WEBSOCKET_STATUS_HANDSHAKE', 2);
+
+// 已握手成功等待浏览器发送数据帧
+define('WEBSOCKET_STATUS_FRAME', 3);
