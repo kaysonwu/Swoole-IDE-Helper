@@ -15,6 +15,7 @@ class Server extends HttpServer {
      * WebSocket 服务器已经内置 了handshake，如果用户希望自己进行握手处理
      * 可以设置 onHandShake 事件回调函数
      *
+     * @optional
      * @var callback
      *
      * @example $server->on('HandShake', function(\Swoole\Http\Request $request, \Swoole\Http\Response $response){})
@@ -24,6 +25,7 @@ class Server extends HttpServer {
     /**
      * 客户端与服务器建立连接并完成握手后会触发
      *
+     * @optional
      * @var callback
      *
      * @example $server->on('Open', function(\Swoole\WebSocket\Server $server, \Swoole\Http\Request $request){})
@@ -33,6 +35,7 @@ class Server extends HttpServer {
     /**
      * 当服务器收到来自客户端的数据帧时触发
      *
+     * @required
      * @var callback
      *
      * @example $server->on('Message', function(\Swoole\WebSocket\Server $server, \Swoole\WebSocket\Frame $frame){})
