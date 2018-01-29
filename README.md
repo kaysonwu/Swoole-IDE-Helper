@@ -8,6 +8,6 @@
 # PHPStorm 安装
 - 在 Project 最下面找到 External Libraries
 - Configure PHP Include Paths...
-- Add 添加上一步生成的 phalcon 文件
+- Add 添加上一步生成的 `Swoole-IDE-Helper` 文件
 - apply
 - ok
