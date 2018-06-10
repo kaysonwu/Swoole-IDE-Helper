@@ -20,7 +20,7 @@ class Timer {
      * @param   callback   $callback        回调函数。
      * @return  int                         定时器 ID
      */
-    public function afer($after_time_ms, $callback){}
+    public function after($after_time_ms, $callback){}
 
     /**
      * 使用定时器 ID 来删除定时器。

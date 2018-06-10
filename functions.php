@@ -48,7 +48,7 @@ function swoole_timer_tick($ms, $callback, $user_param){}
  *
  * @deprecated
  */
-function swoole_timer_afer($after_time_ms, $callback){}
+function swoole_timer_after($after_time_ms, $callback){}
 
 /**
  * 使用定时器 ID 来删除定时器。
